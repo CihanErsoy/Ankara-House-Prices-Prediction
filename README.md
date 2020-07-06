@@ -7,7 +7,7 @@ I also built a front-end HTML form to input values to predict the price of whate
 
 Scrapy, Scikit Learn, Pandas, Numpy, Pickle and Flask (for API) are needed to implement this project.
 
-Project Structure
+# Project Structure
 
 This project has 3 main parts(also 3 main folders):
   1) Scraping the data that we need. 
@@ -32,10 +32,12 @@ There is an HTML form to input values of a house to learn the price of it. All y
 I also inserted a screen shot of html page for you to take a look at the final user interface(html page) without implementing all necessary stuff. 
 csv file here is a clean version of the dataset and only has numeric values. Therefore, when you enter values to predict the price of a house on html, you need to enter corresponding numeric values.
 I put the corresponding numeric values of house features below to use in html form. If you want to give it a try, here they are:
+<p>Age:  -1 < x < 100</p>
 
-Age:  -1 < x < 100
 Area: 0 < x < 1000
+
 CreditAvlb: Available:2 / Unknown:1 / Not Available:0
+
 Firsthand: Yes: 2 / No: 1 / Under Constraction:0
 FloorCount: -1 < x < 40
 FloorNumber:  0 < x < 40 Also, Ground floor:0/ basement floor:-1 / 
