@@ -31,20 +31,31 @@ Deployment: This part is under houseprices directory.You will see templates and 
 There is an HTML form to input values of a house to learn the price of it. All you need to do is click predict button after entering the features of the house. 
 I also inserted a screen shot of html page for you to take a look at the final user interface(html page) without implementing all necessary stuff. 
 csv file here is a clean version of the dataset and only has numeric values. Therefore, when you enter values to predict the price of a house on html, you need to enter corresponding numeric values.
-I put the corresponding numeric values of house features below to use in html form. If you want to give it a try, here they are:
-<p>Age:  -1 < x < 100</p>
+
+Do not enter string values in html form, use corresponding numeric values below instead.
+
+Age:  -1 < x < 100
 
 Area: 0 < x < 1000
 
 CreditAvlb: Available:2 / Unknown:1 / Not Available:0
 
 Firsthand: Yes: 2 / No: 1 / Under Constraction:0
+
 FloorCount: -1 < x < 40
-FloorNumber:  0 < x < 40 Also, Ground floor:0/ basement floor:-1 / 
+
+FloorNumber:  0 < x < 40 Also, Ground floor:0/ basement floor:-1 
+
 Frontage(Direction): North-faced : 1 / South-faced : 0
+
 Fuel: Natural gas: 3 / Electricity:2 / Fuel Oil: 1 / Coal: 0 
+
 Furniture: With Furniture: 1 / Without Furniture: 0
+
 MaintenanceFee: -1 < x < 2500
+
 Room: 0 < x < 10 (including living room, exluding bathroom and toilet)
+
 Town: 'Gölbaşı' : 10, 'Çankaya': 9, 'Yenimahalle': 8, 'Etimesgut':7, 'Keçiören':6, 'Pursaklar':5, 'Altındağ':4, 'Mamak': 3, 'Sincan':2, Others: 1, 
-Le_Heating:
+
+Le_Heating: Unknown:0 / No Heating: 1 / Geotermic: 2 /  Room Heater:3 / Air Conditioner: 4 / Combi Boiler:5 / Central Heating Boiler:6 / Heat Cost Allocator: 7 / Stove:8
