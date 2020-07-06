@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+ <div class="login">
+   The Prediction of House Prices in Ankara
+ <br>
+ <br>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	  <input type="text" name="Age" placeholder="How old is the house?" required="required" />
+        <input type="text" name="Area" placeholder="What is the gross internal area of the house?" required="required" />
+		    <input type="text" name="CreditAvlb" placeholder="Is mortgage credit available for the house?" required="required" />
+        <input type="text" name="Firsthand" placeholder="Is it a brand new house?" required="required" />
+        <input type="text" name="FloorCount" placeholder="How many floors are in the building totally?" required="required" />
+        <input type="text" name="FloorNumber" placeholder="What is the floor number of the house?" required="required" />
+        <input type="text" name="Frontage" placeholder="Which direction does the house face?" required="required" />
+        <input type="text" name="Fuel" placeholder="What kind of fuel is used to heat the house?" required="required" />
+        <input type="text" name="Furniture" placeholder="With furniture/Without furniture?" required="required" />
+        <input type="text" name="MaintenanceFee" placeholder="How much is the maintenance fee?" required="required" />
+        <input type="text" name="Room" placeholder="How many rooms are there?" required="required" />
+        <input type="text" name="Town" placeholder="Which town in Ankara?" required="required" />
+        <input type="text" name="Heating" placeholder="What kind of heating?" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
