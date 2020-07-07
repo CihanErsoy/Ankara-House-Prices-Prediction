@@ -46,7 +46,7 @@ FloorCount: -1 < x < 40
 
 FloorNumber:  0 < x < 40 Also, Ground floor:0/ basement floor:-1 
 
-Frontage(Direction): North-faced : 1 / South-faced : 0
+Frontage(Direction): North-faced : 0 / South-faced : 1
 
 Fuel: Natural gas: 3 / Electricity:2 / Fuel Oil: 1 / Coal: 0 
 
